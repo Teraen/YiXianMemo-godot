@@ -13,7 +13,6 @@ var DetailMode = true
 var err_log: String
 @onready var DIR = OS.get_executable_path().get_base_dir()
 @onready var  LOG_PATH = DIR.path_join("PyFiles/error_log.txt")
-@onready var label: Label = $Label
 
 
 func _ready():

@@ -1,5 +1,7 @@
 extends Node
 
+var DIR = "C:/Users/TeraEnemy/Desktop/Memo/通用/弈仙Memo2.0.1" #PyFiles文件夹所在位置
+
 @onready var p101: Button = $"../GridContainer/VBoxContainer/Card1/Button"
 @onready var p102: Button = $"../GridContainer/VBoxContainer/Card2/Button"
 @onready var p103: Button = $"../GridContainer/VBoxContainer/Card3/Button"
@@ -152,11 +154,11 @@ var runningtype :="0"
 var process_pids :=[]
 var dict: Dictionary
 
-@onready var DIR = OS.get_executable_path().get_base_dir()
-@onready var python_path = DIR.path_join("PyFiles/python.exe")
-@onready var script_path = DIR.path_join("PyFiles/server.py")
-@onready var LOG_PATH = DIR.path_join("PyFiles/error_log.txt")
-@onready var save_path = DIR.path_join("PyFiles/main.tscn")
+
+var python_path
+var script_path
+var LOG_PATH
+
 
 
 func _notification(what):
@@ -167,6 +169,13 @@ func _notification(what):
 		get_tree().quit() # default behavior
 
 func _ready():
+	if OS.has_feature("editor"):
+		pass
+	else:
+		DIR = OS.get_executable_path().get_base_dir()
+	python_path = DIR.path_join("PyFiles/python.exe")
+	script_path = DIR.path_join("PyFiles/server.py")
+	LOG_PATH = DIR.path_join("PyFiles/error_log.txt")
 	set_process(false)
 	start_listening()
 	start_server()
