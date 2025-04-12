@@ -188,6 +188,7 @@ func _process(_delta):
 		Global.err_log = Global.err_log + _format_log("take_connection")
 		var peer : PacketPeerUDP = server.take_connection()
 		var packet = peer.get_packet().get_string_from_utf8()
+		print(packet)
 		#var json = JSON.new()
 		#var parse_result = json.parse_string(packet)
 		dict=parse_python_dict(packet)
