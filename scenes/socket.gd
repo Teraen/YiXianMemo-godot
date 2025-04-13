@@ -1,6 +1,6 @@
 extends Node
 
-var DIR = "C:/Users/TeraEnemy/Desktop/Memo/通用/弈仙Memo2.0.1" #PyFiles文件夹所在位置
+var DIR = "C:/YiXianMemo" #PyFiles文件夹所在位置
 
 @onready var p101: Button = $"../GridContainer/VBoxContainer/Card1/Button"
 @onready var p102: Button = $"../GridContainer/VBoxContainer/Card2/Button"
@@ -210,6 +210,7 @@ func _process(_delta):
 				label.text = "Info: " + keys[i]
 				Global.err_log = Global.err_log + _format_log(keys[i])
 			i += 1
+			
 		
 func start_listening():
 # warning-ignore:return_value_discarded

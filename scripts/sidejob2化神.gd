@@ -47,6 +47,8 @@ func _process(delta: float) -> void:
 	else:
 		visible = true
 
+	update_display()
+
 func _on_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.is_pressed():
 		if event.button_index==2:
@@ -59,6 +61,21 @@ func _on_gui_input(event: InputEvent) -> void:
 			display_num = Num
 		cards_num.text = str(display_num)
 			
+		update_display()
+
+func update_display() -> void:
+	cards_num.text = str(display_num)
+
+	# 根据数值设置颜色
+	if display_num == 2:
+		cards_num.add_theme_color_override("font_color", Color(1, 0.5, 0)) # 橙色
+	elif display_num == 1:
+		cards_num.add_theme_color_override("font_color", Color(1, 0, 0)) # 红色
+	else:
+		cards_num.add_theme_color_override("font_color", Color(1, 1, 1)) # 默认白色
+
+	# 控制可见性
+	visible = display_num >= 1
 
 
 func _on_side_job_21_cards_add_area_2(sidejob2: Variant, JobAdd: Variant, level: Variant, LAR: Variant) -> void:
