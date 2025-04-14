@@ -15,7 +15,7 @@ var mode: bool = false
 var job: int
 
 @onready var cards_num: Label = $display
-@onready var detail_mode: CheckButton = $"../../../../DetailMode"
+@onready var detail_mode: CheckButton = $"../../../../Buttons/DetailMode"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -53,7 +53,7 @@ func _on_gui_input(event: InputEvent) -> void:
 		if event.button_index==2:
 			Num = Num - 1
 		elif event.button_index==1:
-			Num = Num - 3
+			Num = Num + 1
 		if mode == false:
 			display_num = Num/3
 		else:
@@ -78,7 +78,7 @@ func update_display() -> void:
 
 
 func _on_side_job_21_cards_add_area_2(sidejob2: Variant, JobAdd: Variant, level: Variant, LAR: Variant) -> void:
-	if level == 0:#更改此判断语句，以适应不同境界副职卡牌的兼修逻辑
+	if level ==1:#更改此判断语句，以适应不同境界副职卡牌的兼修逻辑
 		if sidejob2 == 0:
 			for node in get_tree().get_nodes_in_group("丹2"):
 				node.visible=true

@@ -7,15 +7,15 @@ extends Button
 @onready var 阵: TextureRect = $CenterContainer/阵
 @onready var 植: TextureRect = $CenterContainer/植
 @onready var 命: TextureRect = $CenterContainer/命
-@onready var cards_num: Label = $display
-@onready var detail_mode: CheckButton = $"../../../../DetailMode"
 
 var ex_differ: int = -1
 var Num: int = 0
-var differ: int = 8
 var display_num: int = 0
 var mode: bool = false
 var job_current_area: int
+
+@onready var cards_num: Label = $display
+@onready var detail_mode: CheckButton = $"../../../../Buttons/DetailMode"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -75,10 +75,10 @@ func update_display() -> void:
 
 	# 控制可见性
 	visible = display_num >= 1
-		
+
 
 func _on_side_job_11_cards_add(sidejob1: Variant, jobadd: Variant, lvl: Variant, LAR: Variant) -> void:
-	if lvl <= 3:#更改此判断语句，以适应不同境界副职卡牌的兼修逻辑
+	if lvl == 0:#更改此判断语句，以适应不同境界副职卡牌的兼修逻辑
 		if sidejob1 == 0:
 			for node in get_tree().get_nodes_in_group("丹1"):
 				node.visible=true
@@ -101,13 +101,7 @@ func _on_side_job_11_cards_add(sidejob1: Variant, jobadd: Variant, lvl: Variant,
 			for node in get_tree().get_nodes_in_group("命1"):
 				node.visible=true
 		job_current_area = sidejob1
-		Num = Num + differ
-
-
-func _on_丹_visibility_changed() -> void:
-	if job_current_area == 0:
-		differ = 4
-
+		Num = Num + 8#更改此数字以修改此卡牌固有数量
 
 func _on_画_visibility_changed() -> void:
 	if job_current_area == 3:

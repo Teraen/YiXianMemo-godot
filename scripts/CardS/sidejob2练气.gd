@@ -12,10 +12,10 @@ extends Button
 var Num: int = 0
 var display_num: int = 0
 var mode: bool = false
-var job_current_area: int
+var job: int
 
 @onready var cards_num: Label = $display
-@onready var detail_mode: CheckButton = $"../../../../DetailMode"
+@onready var detail_mode: CheckButton = $"../../../../Buttons/DetailMode"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -53,7 +53,7 @@ func _on_gui_input(event: InputEvent) -> void:
 		if event.button_index==2:
 			Num = Num - 1
 		elif event.button_index==1:
-			Num = Num + 1
+			Num = Num - 3
 		if mode == false:
 			display_num = Num/3
 		else:
@@ -77,27 +77,27 @@ func update_display() -> void:
 	visible = display_num >= 1
 
 
-func _on_side_job_11_cards_add(sidejob1: Variant, jobadd: Variant, lvl: Variant, LAR: Variant) -> void:
-	if lvl <= 1:#更改此判断语句，以适应不同境界副职卡牌的兼修逻辑
-		if sidejob1 == 0:
-			for node in get_tree().get_nodes_in_group("丹1"):
+func _on_side_job_21_cards_add_area_2(sidejob2: Variant, JobAdd: Variant, level: Variant, LAR: Variant) -> void:
+	if level == 0:#更改此判断语句，以适应不同境界副职卡牌的兼修逻辑
+		if sidejob2 == 0:
+			for node in get_tree().get_nodes_in_group("丹2"):
 				node.visible=true
-		elif sidejob1 == 1:
-			for node in get_tree().get_nodes_in_group("符1"):
+		elif sidejob2 == 1:
+			for node in get_tree().get_nodes_in_group("符2"):
 				node.visible=true
-		elif sidejob1 == 2:
-			for node in get_tree().get_nodes_in_group("琴1"):
+		elif sidejob2 == 2:
+			for node in get_tree().get_nodes_in_group("琴2"):
 				node.visible=true
-		elif sidejob1 == 3:
-			for node in get_tree().get_nodes_in_group("画1"):
+		elif sidejob2 == 3:
+			for node in get_tree().get_nodes_in_group("画2"):
 				node.visible=true
-		elif sidejob1 == 4:
-			for node in get_tree().get_nodes_in_group("阵1"):
+		elif sidejob2 == 4:
+			for node in get_tree().get_nodes_in_group("阵2"):
 				node.visible=true
-		elif sidejob1 == 5:
-			for node in get_tree().get_nodes_in_group("植1"):
+		elif sidejob2 == 5:
+			for node in get_tree().get_nodes_in_group("植2"):
 				node.visible=true
-		elif sidejob1 == 6:
-			for node in get_tree().get_nodes_in_group("命1"):
+		elif sidejob2 == 6:
+			for node in get_tree().get_nodes_in_group("命2"):
 				node.visible=true
 		Num = Num + 8#更改此数字以修改此卡牌固有数量
