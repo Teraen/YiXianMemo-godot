@@ -185,7 +185,7 @@ func _process(_delta):
 	var size = 0
 	server.poll()
 	if server.is_connection_available():
-		Global.err_log = Global.err_log + _format_log("take_connection")
+		#Global.err_log = Global.err_log + _format_log("take_connection")
 		var peer : PacketPeerUDP = server.take_connection()
 		var packet = peer.get_packet().get_string_from_utf8()
 		print(packet)
