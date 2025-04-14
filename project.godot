@@ -39,6 +39,11 @@ window/stretch/mode="canvas_items"
 ]
 }
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://Localization/Translation.en.translation")
+locale/fallback="zh_CN"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=2

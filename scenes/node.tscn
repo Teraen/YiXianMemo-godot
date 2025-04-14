@@ -1,22 +1,21 @@
 [gd_scene load_steps=350 format=3 uid="uid://cg7xpl03uf808"]
 
 [ext_resource type="Texture2D" uid="uid://30t8gcxbhl80" path="res://Assets/PIC/CS/CS1/150px-云剑•探云_1级.png" id="2_qhfa5"]
-[ext_resource type="Script" uid="uid://c2cok5kvblvqr" path="res://scripts/Calc.gd" id="3_5j8ir"]
+[ext_resource type="Script" uid="uid://c2cok5kvblvqr" path="res://scripts/UI/Calc.gd" id="3_5j8ir"]
 [ext_resource type="FontFile" uid="uid://dnoetiemewewd" path="res://Assets/font/ChironGoRoundTC-900H.ttf" id="3_71enm"]
 [ext_resource type="Texture2D" uid="uid://bl6n6c70j71qy" path="res://Assets/PIC/HS/HS1/150px-斗转星移_1级.png" id="3_238sx"]
 [ext_resource type="Texture2D" uid="uid://cbgj12gl1w6b6" path="res://Assets/PIC/background.jpg" id="3_dondh"]
-[ext_resource type="Script" uid="uid://41xxrbmlqcv4" path="res://scripts/切换+动效.gd" id="4_2ysve"]
+[ext_resource type="Script" uid="uid://41xxrbmlqcv4" path="res://scripts/CardS/切换&动效/切换+动效.gd" id="4_2ysve"]
 [ext_resource type="Texture2D" uid="uid://e3vyjeryximw" path="res://Assets/PIC/FE/FE1/150px-木灵印_1级.png" id="4_6qyud"]
-[ext_resource type="Script" uid="uid://b64vt6r3ejiaq" path="res://scripts/reset.gd" id="4_p1wol"]
-[ext_resource type="Script" uid="uid://b8afdy3yvrqog" path="res://scripts/tab_container.gd" id="4_wev04"]
+[ext_resource type="Script" uid="uid://b64vt6r3ejiaq" path="res://scripts/UI/reset.gd" id="4_p1wol"]
+[ext_resource type="Script" uid="uid://b8afdy3yvrqog" path="res://scripts/UI/tab_container.gd" id="4_wev04"]
 [ext_resource type="Texture2D" uid="uid://ith68wug5nbr" path="res://Assets/PIC/DX/DX1/150px-崩拳•戳_1级.png" id="5_2ysve"]
 [ext_resource type="Shader" uid="uid://d3g7210jb8mi3" path="res://Assets/shaders/3DCards.gdshader" id="5_5x2ja"]
-[ext_resource type="Script" uid="uid://dscyofprl62mf" path="res://scripts/Button_化神前.gd" id="5_p1wol"]
-[ext_resource type="Script" uid="uid://bc17laqusl3gy" path="res://scripts/detail_mode.gd" id="5_uyp0c"]
+[ext_resource type="Script" uid="uid://dscyofprl62mf" path="res://scripts/CardS/Button_化神前.gd" id="5_p1wol"]
 [ext_resource type="StyleBox" uid="uid://c3nrylgljld58" path="res://Assets/Theme/BUTTON_STYLE.tres" id="6_6qyud"]
 [ext_resource type="FontFile" uid="uid://cbmciypd6hgsi" path="res://Assets/font/字魂白鸽天行体.ttf" id="6_238sx"]
-[ext_resource type="Script" uid="uid://dlwo0b3l85482" path="res://scripts/language.gd" id="8_8d2sb"]
-[ext_resource type="Script" uid="uid://dk1ylubqvnq3w" path="res://scripts/restart_py.gd" id="8_vthb0"]
+[ext_resource type="Script" uid="uid://dlwo0b3l85482" path="res://scripts/UI/language.gd" id="8_8d2sb"]
+[ext_resource type="Script" uid="uid://dk1ylubqvnq3w" path="res://scripts/UI/restart_py.gd" id="8_vthb0"]
 [ext_resource type="Texture2D" uid="uid://b0eeemcltkuqe" path="res://Assets/PIC/DX/DX1/150px-崩拳•封_1级.png" id="12_awf80"]
 [ext_resource type="Texture2D" uid="uid://bruxg6lqhiy4l" path="res://Assets/PIC/FE/FE1/150px-木灵•芽_1级.png" id="13_d2qqo"]
 [ext_resource type="Texture2D" uid="uid://cg6b5isp8k28c" path="res://Assets/PIC/DX/DX1/150px-崩拳•弹_1级.png" id="13_wby4p"]
@@ -59,7 +58,7 @@
 [ext_resource type="Texture2D" uid="uid://cpdmbkmni001d" path="res://Assets/PIC/HS/HS1/150px-揽雀尾_1级.png" id="46_mgg0p"]
 [ext_resource type="Texture2D" uid="uid://b4is28ua1uuvh" path="res://Assets/PIC/HS/HS1/150px-野马分鬃_1级.png" id="50_ibj2s"]
 [ext_resource type="Texture2D" uid="uid://q0aglkpkgjcq" path="res://Assets/PIC/HS/HS1/150px-藕断丝连_1级.png" id="52_qha5x"]
-[ext_resource type="Script" uid="uid://cl148s27j7hu4" path="res://scripts/disp_FE缺少.gd" id="54_50h6d"]
+[ext_resource type="Script" uid="uid://cl148s27j7hu4" path="res://scripts/CardS/disp_FE缺少.gd" id="54_50h6d"]
 [ext_resource type="Texture2D" uid="uid://b2jvb0do836x8" path="res://Assets/PIC/CS/CS2/150px-云剑•回守_1级.png" id="54_ns5xn"]
 [ext_resource type="Texture2D" uid="uid://b28kexkka6kkc" path="res://Assets/PIC/DX/DX2/150px-崩拳•撼_1级.png" id="54_yvrl7"]
 [ext_resource type="Texture2D" uid="uid://dfyxsmvgjufr" path="res://Assets/PIC/FE/FE2/150px-木灵•复苏_1级.png" id="55_d5lue"]
@@ -190,10 +189,10 @@
 [ext_resource type="Texture2D" uid="uid://ocumf6hi5flg" path="res://Assets/PIC/CS/CS4/150px-水月剑阵_1级.png" id="177_wwuek"]
 [ext_resource type="Texture2D" uid="uid://mjemrg74ikwo" path="res://Assets/PIC/DX/DX4/150px-磅礴之势_1级.png" id="178_bx3m5"]
 [ext_resource type="Texture2D" uid="uid://cfcy7pas48jq4" path="res://Assets/PIC/CS/CS4/150px-狂剑•二式_1级.png" id="181_mpq5o"]
-[ext_resource type="Script" uid="uid://vmkdjvx1s2su" path="res://scripts/Button_化神后.gd" id="183_e1o6m"]
+[ext_resource type="Script" uid="uid://vmkdjvx1s2su" path="res://scripts/CardS/Button_化神后.gd" id="183_e1o6m"]
 [ext_resource type="Texture2D" uid="uid://bl78gotelpexy" path="res://Assets/PIC/CS/CS5/150px-云剑•游龙_1级.png" id="184_1wy0r"]
 [ext_resource type="Texture2D" uid="uid://cfsu0xsphj4mo" path="res://Assets/PIC/FE/FE5/150px-木灵•柳纷飞_1级.png" id="184_3e5as"]
-[ext_resource type="Script" uid="uid://dedlyf2jaeuo1" path="res://scripts/disp_FE多余.gd" id="184_3v5pr"]
+[ext_resource type="Script" uid="uid://dedlyf2jaeuo1" path="res://scripts/CardS/disp_FE多余.gd" id="184_3v5pr"]
 [ext_resource type="Texture2D" uid="uid://djtvqwp63gwql" path="res://Assets/PIC/DX/DX5/150px-崩拳•闪击_1级.png" id="184_31ros"]
 [ext_resource type="Texture2D" uid="uid://dsiietgghmae4" path="res://Assets/PIC/CS/CS5/150px-云剑•凌波_1级.png" id="185_bmtl2"]
 [ext_resource type="Texture2D" uid="uid://be73ajybq8i4" path="res://Assets/PIC/HS/HS5/150px-天元心法_1级.png" id="185_js5my"]
@@ -223,9 +222,9 @@
 [ext_resource type="Texture2D" uid="uid://c4nyegx3rr0b6" path="res://Assets/PIC/HS/HS5/150px-紫气东来_1级.png" id="205_lu6wp"]
 [ext_resource type="Texture2D" uid="uid://bi6faec5sgt6g" path="res://Assets/PIC/DX/DX5/150px-威震四方_1级.png" id="208_lu6wp"]
 [ext_resource type="Texture2D" uid="uid://bfpkcitrvldrx" path="res://Assets/PIC/DX/DX5/150px-天地浩荡_1级.png" id="212_ymhx4"]
-[ext_resource type="Script" uid="uid://c6c55wwj2ixnm" path="res://scripts/副职切换+动效.gd" id="215_4mr2m"]
+[ext_resource type="Script" uid="uid://c6c55wwj2ixnm" path="res://scripts/CardS/切换&动效/副职切换+动效.gd" id="215_4mr2m"]
 [ext_resource type="Texture2D" uid="uid://cfj2vnsf7vhgn" path="res://Assets/PIC/丹/150px-地灵丹_1级.png" id="216_6tm8g"]
-[ext_resource type="Script" uid="uid://ctsk3sh405gll" path="res://scripts/sidejob1练气.gd" id="216_uxkgc"]
+[ext_resource type="Script" uid="uid://ctsk3sh405gll" path="res://scripts/CardS/sidejob1练气.gd" id="216_uxkgc"]
 [ext_resource type="Texture2D" uid="uid://dl3q7lv5228ke" path="res://Assets/PIC/符/150px-奔雷符_1级.png" id="217_uxkgc"]
 [ext_resource type="Texture2D" uid="uid://dyu38deoa4kw2" path="res://Assets/PIC/琴/150px-破音_1级.png" id="218_2hogt"]
 [ext_resource type="Texture2D" uid="uid://bl4hhj43xh7i4" path="res://Assets/PIC/画/150px-调色_1级.png" id="219_gwy6p"]
@@ -233,31 +232,31 @@
 [ext_resource type="Texture2D" uid="uid://1hl4r6j7j1hv" path="res://Assets/PIC/植/150px-归元草_1级.png" id="221_6jkbs"]
 [ext_resource type="Texture2D" uid="uid://bqa3jesaojrwm" path="res://Assets/PIC/命/150px-卜命_1级.png" id="222_6wnyv"]
 [ext_resource type="Texture2D" uid="uid://d24s0b587q5lg" path="res://Assets/PIC/丹/150px-培元丹_1级.png" id="224_bm3gi"]
-[ext_resource type="Script" uid="uid://4jkcuaxfxivu" path="res://scripts/副职切换_area2.gd" id="224_uxkgc"]
-[ext_resource type="Script" uid="uid://bs0yq06pk6j6x" path="res://scripts/sidejob2练气.gd" id="225_2hogt"]
+[ext_resource type="Script" uid="uid://4jkcuaxfxivu" path="res://scripts/CardS/切换&动效/副职切换_area2.gd" id="224_uxkgc"]
+[ext_resource type="Script" uid="uid://bs0yq06pk6j6x" path="res://scripts/CardS/sidejob2练气.gd" id="225_2hogt"]
 [ext_resource type="Texture2D" uid="uid://epr50h6yevbh" path="res://Assets/PIC/符/150px-护灵符_1级.png" id="225_iprr4"]
 [ext_resource type="Texture2D" uid="uid://bfduy6o1spl5n" path="res://Assets/PIC/丹/150px-小还丹_1级.png" id="225_rab6i"]
-[ext_resource type="Script" uid="uid://cei7da60wev7n" path="res://scripts/sidejob1筑基.gd" id="226_dj5db"]
+[ext_resource type="Script" uid="uid://cei7da60wev7n" path="res://scripts/CardS/sidejob1筑基.gd" id="226_dj5db"]
 [ext_resource type="Texture2D" uid="uid://b875rubg2lcpq" path="res://Assets/PIC/琴/150px-土行曲_1级.png" id="226_jio75"]
 [ext_resource type="Texture2D" uid="uid://3f3sy8q2hfb6" path="res://Assets/PIC/符/150px-锐金符_1级.png" id="227_5kkib"]
-[ext_resource type="Script" uid="uid://mtkm60brhmag" path="res://scripts/sidejob2筑基.gd" id="227_6jkbs"]
+[ext_resource type="Script" uid="uid://mtkm60brhmag" path="res://scripts/CardS/sidejob2筑基.gd" id="227_6jkbs"]
 [ext_resource type="Texture2D" uid="uid://6ldewswslq2m" path="res://Assets/PIC/画/150px-练笔_1级.png" id="227_mrq27"]
-[ext_resource type="Script" uid="uid://bmuf6cppqm5pd" path="res://scripts/sidejob2金丹.gd" id="228_6jkbs"]
-[ext_resource type="Script" uid="uid://2rmd7hdjrlh7" path="res://scripts/sidejob1金丹.gd" id="228_6wnyv"]
+[ext_resource type="Script" uid="uid://bmuf6cppqm5pd" path="res://scripts/CardS/sidejob2金丹.gd" id="228_6jkbs"]
+[ext_resource type="Script" uid="uid://2rmd7hdjrlh7" path="res://scripts/CardS/sidejob1金丹.gd" id="228_6wnyv"]
 [ext_resource type="Texture2D" uid="uid://dcq1york8ml4g" path="res://Assets/PIC/阵/150px-碎杀阵_1级.png" id="228_ey3ow"]
 [ext_resource type="Texture2D" uid="uid://dwujnbltiwq2e" path="res://Assets/PIC/植/150px-金梭兰_1级.png" id="229_47nx2"]
 [ext_resource type="Texture2D" uid="uid://bmuisjn2utnu2" path="res://Assets/PIC/丹/150px-锻体丹_1级.png" id="229_gdc2s"]
 [ext_resource type="Texture2D" uid="uid://db5lb20gxy8wu" path="res://Assets/PIC/琴/150px-逍遥曲_1级.png" id="229_wjvs0"]
 [ext_resource type="Texture2D" uid="uid://dbhxfgjqd1m54" path="res://Assets/PIC/丹/150px-飞云丹_1级.png" id="230_78610"]
-[ext_resource type="Script" uid="uid://dl7ybn7jaxuw0" path="res://scripts/sidejob1元婴.gd" id="230_ikdse"]
+[ext_resource type="Script" uid="uid://dl7ybn7jaxuw0" path="res://scripts/CardS/sidejob1元婴.gd" id="230_ikdse"]
 [ext_resource type="Texture2D" uid="uid://b3ndnvsnbtmxm" path="res://Assets/PIC/命/150px-察体_1级.png" id="230_nwmwv"]
-[ext_resource type="Script" uid="uid://bl1bou5260ai6" path="res://scripts/sidejob2元婴.gd" id="231_cnykw"]
+[ext_resource type="Script" uid="uid://bl1bou5260ai6" path="res://scripts/CardS/sidejob2元婴.gd" id="231_cnykw"]
 [ext_resource type="Texture2D" uid="uid://33cuw6ijbxxy" path="res://Assets/PIC/画/150px-研墨_1级.png" id="231_lhj30"]
 [ext_resource type="Texture2D" uid="uid://cvtrjetqfogap" path="res://Assets/PIC/丹/150px-驱邪丹_1级.png" id="231_s4uyw"]
-[ext_resource type="Script" uid="uid://bdx7jth05gho0" path="res://scripts/sidejob1化神.gd" id="232_hfkw5"]
+[ext_resource type="Script" uid="uid://bdx7jth05gho0" path="res://scripts/CardS/sidejob1化神.gd" id="232_hfkw5"]
 [ext_resource type="Texture2D" uid="uid://bfccp0408cx6o" path="res://Assets/PIC/符/150px-火云符_1级.png" id="232_wen75"]
 [ext_resource type="Texture2D" uid="uid://ce6mj121wb20e" path="res://Assets/PIC/阵/150px-冲击阵纹_1级.png" id="233_hph2k"]
-[ext_resource type="Script" uid="uid://dwsls6xdx4hcy" path="res://scripts/sidejob2化神.gd" id="233_rqon1"]
+[ext_resource type="Script" uid="uid://dwsls6xdx4hcy" path="res://scripts/CardS/sidejob2化神.gd" id="233_rqon1"]
 [ext_resource type="Texture2D" uid="uid://1ate3yaf2hej" path="res://Assets/PIC/符/150px-清心咒_1级.png" id="234_dqx0f"]
 [ext_resource type="Texture2D" uid="uid://be1wbognbnn2x" path="res://Assets/PIC/丹/150px-还魂丹_1级.png" id="234_k313w"]
 [ext_resource type="Texture2D" uid="uid://c32ajw38vt8hd" path="res://Assets/PIC/植/150px-剑枝竹_1级.png" id="235_02l8j"]
@@ -341,7 +340,7 @@
 [ext_resource type="Texture2D" uid="uid://n468wkmsflxl" path="res://Assets/PIC/命/150px-命运轮回_1级.png" id="323_8d2sb"]
 [ext_resource type="Texture2D" uid="uid://d0a38oeskgj7v" path="res://Assets/PIC/命/150px-天机·顺应_1级.png" id="330_p7syq"]
 [ext_resource type="Texture2D" uid="uid://hp1yg0edmgie" path="res://Assets/PIC/bilibili.png" id="337_poqfo"]
-[ext_resource type="Script" uid="uid://doqulc2socc2f" path="res://scenes/socket.gd" id="341_vthb0"]
+[ext_resource type="Script" uid="uid://doqulc2socc2f" path="res://scripts/socket.gd" id="341_vthb0"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6qyud"]
 
@@ -394,6 +393,14 @@ bg_color = Color(0.54902, 0.552941, 0.870588, 0.364706)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uyp0c"]
 bg_color = Color(0.54902, 0.552941, 0.870588, 0.588235)
+
+[sub_resource type="GDScript" id="GDScript_vthb0"]
+script/source = "extends CheckButton
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	button_pressed = Global.DetailMode
+"
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4ygak"]
 shader = ExtResource("5_5x2ja")
@@ -561,6 +568,65 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 1
 text = "化神"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_left = 156.0
+offset_top = 12.0
+offset_right = 210.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Info: "
+script = ExtResource("341_vthb0")
+
+[node name="Buttons" type="HBoxContainer" parent="."]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -199.0
+offset_bottom = 48.0
+grow_horizontal = 0
+
+[node name="DetailMode" type="CheckButton" parent="Buttons"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 10
+mouse_filter = 1
+button_pressed = true
+text = "计数"
+script = SubResource("GDScript_vthb0")
+
+[node name="RestartPy" type="Button" parent="Buttons"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_fonts/font = ExtResource("6_238sx")
+text = "Py重启"
+script = ExtResource("8_vthb0")
+
+[node name="Cal" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_horizontal = 10
+text = "400"
+script = ExtResource("3_5j8ir")
+
+[node name="Reset" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_fonts/font = ExtResource("6_238sx")
+text = "初始化"
+script = ExtResource("4_p1wol")
+
+[node name="language" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_fonts/font = ExtResource("6_238sx")
+toggle_mode = true
+text = "En"
+script = ExtResource("8_8d2sb")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1
@@ -9029,81 +9095,15 @@ offset_bottom = 24.1538
 grow_horizontal = 0
 text = "2"
 
-[node name="Reset" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -86.0
-offset_top = 1.0
-offset_bottom = 49.0
-grow_horizontal = 0
-theme_override_fonts/font = ExtResource("6_238sx")
-text = "初始化"
-script = ExtResource("4_p1wol")
-
-[node name="language" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -184.0
-offset_top = 1.0
-offset_right = -82.0
-offset_bottom = 49.0
-grow_horizontal = 0
-theme_override_fonts/font = ExtResource("6_238sx")
-toggle_mode = true
-text = "Language"
-script = ExtResource("8_8d2sb")
-
-[node name="DetailMode" type="CheckButton" parent="."]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -282.0
-offset_top = 1.0
-offset_right = -180.0
-offset_bottom = 49.0
-grow_horizontal = 0
-mouse_filter = 1
-button_pressed = true
-text = "计数"
-script = ExtResource("5_uyp0c")
-
-[node name="Cal" type="Button" parent="DetailMode"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.031
-anchor_right = 0.031
-offset_left = -58.968
-offset_right = 0.0319998
-offset_bottom = 48.0
-grow_horizontal = 0
-text = "400"
-script = ExtResource("3_5j8ir")
-
-[node name="RestartPy" type="Button" parent="."]
-visible = false
-layout_mode = 1
-offset_left = 1270.0
-offset_top = 1.0
-offset_right = 1356.0
-offset_bottom = 49.0
-theme_override_fonts/font = ExtResource("6_238sx")
-text = "Py重启"
-script = ExtResource("8_vthb0")
-
 [node name="bilibiliLogo" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 188.0
-offset_top = 2.0
-offset_right = 788.0
-offset_bottom = 202.0
+offset_left = 204.0
+offset_top = 8.0
+offset_right = 804.0
+offset_bottom = 208.0
 grow_horizontal = 2
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("337_poqfo")
@@ -9125,17 +9125,6 @@ text = "@TeraEnemy"
 underline = 2
 uri = "https://space.bilibili.com/13671193"
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 1
-offset_left = 145.0
-offset_top = 7.0
-offset_right = 199.0
-offset_bottom = 37.0
-theme_override_colors/font_color = Color(1, 1, 0, 1)
-theme_override_font_sizes/font_size = 25
-text = "Info: "
-script = ExtResource("341_vthb0")
-
 [node name="Version" type="Label" parent="."]
 layout_mode = 0
 offset_left = 1482.0
@@ -9144,13 +9133,16 @@ offset_right = 1534.0
 offset_bottom = 951.0
 theme_override_fonts/font = ExtResource("3_71enm")
 theme_override_font_sizes/font_size = 16
-text = "v2.0.1"
+text = "v2.1.0"
 
 [connection signal="tab_changed" from="TabContainer" to="TabContainer" method="_on_tab_changed"]
 [connection signal="toggled" from="TabContainer/门派/CS" to="GridContainer/VBoxContainer/Card1" method="_on_cs_toggled"]
 [connection signal="toggled" from="TabContainer/门派/HS" to="GridContainer/VBoxContainer/Card1" method="_on_hs_toggled"]
 [connection signal="toggled" from="TabContainer/门派/FE" to="GridContainer/VBoxContainer/Card1" method="_on_fe_toggled"]
 [connection signal="toggled" from="TabContainer/门派/DX" to="GridContainer/VBoxContainer/Card1" method="_on_dx_toggled"]
+[connection signal="pressed" from="Buttons/RestartPy" to="Buttons/RestartPy" method="_on_pressed"]
+[connection signal="pressed" from="Buttons/Reset" to="Buttons/Reset" method="_on_pressed"]
+[connection signal="toggled" from="Buttons/language" to="Buttons/language" method="_on_toggled"]
 [connection signal="gui_input" from="GridContainer/VBoxContainer/Card1" to="GridContainer/VBoxContainer/Card1" method="_on_gui_input"]
 [connection signal="mouse_entered" from="GridContainer/VBoxContainer/Card1" to="GridContainer/VBoxContainer/Card1" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="GridContainer/VBoxContainer/Card1" to="GridContainer/VBoxContainer/Card1" method="_on_mouse_exited"]
@@ -9764,6 +9756,3 @@ text = "v2.0.1"
 [connection signal="button_up" from="GridContainer/VBoxContainer15/SideJob_2-3/Button" to="GridContainer/VBoxContainer15/SideJob_2-3" method="_on_button_button_up"]
 [connection signal="gui_input" from="GridContainer/VBoxContainer15/SideJob_2-3/Button" to="GridContainer/VBoxContainer15/SideJob_2-3/Button" method="_on_gui_input"]
 [connection signal="visibility_changed" from="GridContainer/VBoxContainer15/SideJob_2-3/Button/CenterContainer/画" to="GridContainer/VBoxContainer15/SideJob_2-3/Button" method="_on_画_visibility_changed"]
-[connection signal="pressed" from="Reset" to="Reset" method="_on_pressed"]
-[connection signal="toggled" from="language" to="language" method="_on_toggled"]
-[connection signal="pressed" from="RestartPy" to="RestartPy" method="_on_pressed"]

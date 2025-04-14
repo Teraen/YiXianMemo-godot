@@ -3,8 +3,7 @@ extends Button
 var Num: int = 8
 var display_num: int = 2
 var mode: bool = false
-
-@onready var detail_mode: CheckButton = $"../../../../DetailMode"
+@onready var detail_mode: CheckButton = $"../../../../Buttons/DetailMode"
 @onready var display: Label = $display
 
 # Called when the node enters the scene tree for the first time.

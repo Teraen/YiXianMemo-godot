@@ -7,16 +7,15 @@ extends Button
 @onready var 阵: TextureRect = $CenterContainer/阵
 @onready var 植: TextureRect = $CenterContainer/植
 @onready var 命: TextureRect = $CenterContainer/命
+@onready var cards_num: Label = $display
+@onready var detail_mode: CheckButton = $"../../../../Buttons/DetailMode"
 
 var ex_differ: int = -1
 var Num: int = 0
-var differ: int = 6
+var differ: int = 8
 var display_num: int = 0
 var mode: bool = false
 var job_current_area: int
-
-@onready var cards_num: Label = $display
-@onready var detail_mode: CheckButton = $"../../../../DetailMode"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -25,21 +24,19 @@ func _ready() -> void:
 		mode = true
 		display_num = Num
 	else:
-		@warning_ignore("integer_division")
 		display_num = Num/3
 		mode = false
 	cards_num.text = str(display_num)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 #	检测并切换计数模式以及可见性
 	if detail_mode.button_pressed:
 		mode = true
 		Global.DetailMode = true
 		display_num = Num
 	else:
-		@warning_ignore("integer_division")
 		display_num = Num/3
 		mode = false
 		Global.DetailMode = false
@@ -58,7 +55,6 @@ func _on_gui_input(event: InputEvent) -> void:
 		elif event.button_index==1:
 			Num = Num - ex_differ
 		if mode == false:
-			@warning_ignore("integer_division")
 			display_num = Num/3
 		else:
 			display_num = Num
@@ -79,10 +75,10 @@ func update_display() -> void:
 
 	# 控制可见性
 	visible = display_num >= 1
+		
 
-
-func _on_side_job_11_cards_add(sidejob1: Variant, JobAdd: Variant, lvl: Variant, LAR: Variant) -> void:
-	if lvl <= 4:#更改此判断语句，以适应不同境界副职卡牌的兼修逻辑
+func _on_side_job_11_cards_add(sidejob1: Variant, jobadd: Variant, lvl: Variant, LAR: Variant) -> void:
+	if lvl <= 3:#更改此判断语句，以适应不同境界副职卡牌的兼修逻辑
 		if sidejob1 == 0:
 			for node in get_tree().get_nodes_in_group("丹1"):
 				node.visible=true

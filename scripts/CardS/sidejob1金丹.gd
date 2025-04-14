@@ -15,7 +15,7 @@ var mode: bool = false
 var job_current_area: int
 
 @onready var cards_num: Label = $display
-@onready var detail_mode: CheckButton = $"../../../../DetailMode"
+@onready var detail_mode: CheckButton = $"../../../../Buttons/DetailMode"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

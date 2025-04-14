@@ -8,6 +8,7 @@ var JobAdd = -1
 var toggle = [true, false, false, false]
 var Tab = 0
 var DetailMode = true
+var Popup_window = false
 @export var language = false
 
 var err_log: String
