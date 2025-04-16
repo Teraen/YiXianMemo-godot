@@ -1,5 +1,6 @@
-[gd_scene load_steps=350 format=3 uid="uid://cg7xpl03uf808"]
+[gd_scene load_steps=347 format=3 uid="uid://cg7xpl03uf808"]
 
+[ext_resource type="Theme" uid="uid://ccvygelflfa5a" path="res://Assets/Theme/Basic.tres" id="1_8d2sb"]
 [ext_resource type="Texture2D" uid="uid://30t8gcxbhl80" path="res://Assets/PIC/CS/CS1/150px-云剑•探云_1级.png" id="2_qhfa5"]
 [ext_resource type="Script" uid="uid://c2cok5kvblvqr" path="res://scripts/UI/Calc.gd" id="3_5j8ir"]
 [ext_resource type="FontFile" uid="uid://dnoetiemewewd" path="res://Assets/font/ChironGoRoundTC-900H.ttf" id="3_71enm"]
@@ -12,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://ith68wug5nbr" path="res://Assets/PIC/DX/DX1/150px-崩拳•戳_1级.png" id="5_2ysve"]
 [ext_resource type="Shader" uid="uid://d3g7210jb8mi3" path="res://Assets/shaders/3DCards.gdshader" id="5_5x2ja"]
 [ext_resource type="Script" uid="uid://dscyofprl62mf" path="res://scripts/CardS/Button_化神前.gd" id="5_p1wol"]
-[ext_resource type="StyleBox" uid="uid://c3nrylgljld58" path="res://Assets/Theme/BUTTON_STYLE.tres" id="6_6qyud"]
 [ext_resource type="FontFile" uid="uid://cbmciypd6hgsi" path="res://Assets/font/字魂白鸽天行体.ttf" id="6_238sx"]
 [ext_resource type="Script" uid="uid://dlwo0b3l85482" path="res://scripts/UI/language.gd" id="8_8d2sb"]
 [ext_resource type="Script" uid="uid://dk1ylubqvnq3w" path="res://scripts/UI/restart_py.gd" id="8_vthb0"]
@@ -342,50 +342,6 @@
 [ext_resource type="Texture2D" uid="uid://hp1yg0edmgie" path="res://Assets/PIC/bilibili.png" id="337_poqfo"]
 [ext_resource type="Script" uid="uid://doqulc2socc2f" path="res://scripts/socket.gd" id="341_vthb0"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6qyud"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ysve"]
-
-[sub_resource type="Theme" id="Theme_6qyud"]
-Button/colors/font_color = Color(0.509804, 0.705882, 0.705882, 1)
-Button/colors/font_focus_color = Color(0.509804, 0.705882, 0.705882, 1)
-Button/colors/font_hover_color = Color(0.705882, 0.705882, 0.705882, 1)
-Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-Button/colors/font_pressed_color = Color(1, 1, 1, 1)
-Button/constants/outline_size = 7
-Button/font_sizes/font_size = 20
-Button/fonts/font = ExtResource("6_238sx")
-Button/styles/focus = SubResource("StyleBoxEmpty_6qyud")
-Button/styles/hover = ExtResource("6_6qyud")
-Button/styles/hover_pressed = ExtResource("6_6qyud")
-Button/styles/normal = ExtResource("6_6qyud")
-Button/styles/pressed = ExtResource("6_6qyud")
-CheckButton/colors/font_color = Color(0.54902, 0.705882, 0.705882, 1)
-CheckButton/colors/font_focus_color = Color(0.54902, 0.705882, 0.705882, 1)
-CheckButton/colors/font_hover_color = Color(0.627451, 0.627451, 0.627451, 1)
-CheckButton/colors/font_hover_pressed_color = Color(0.627451, 0.627451, 0.627451, 1)
-CheckButton/colors/font_pressed_color = Color(1, 1, 1, 1)
-CheckButton/font_sizes/font_size = 20
-Label/colors/font_color = Color(1, 1, 1, 1)
-Label/colors/font_shadow_color = Color(0, 0, 0, 1)
-Label/constants/shadow_outline_size = 4
-Label/font_sizes/font_size = 23
-Label/fonts/font = ExtResource("6_238sx")
-LinkButton/colors/font_color = Color(0, 0.698039, 1, 1)
-LinkButton/colors/font_hover_color = Color(1.34766e-06, 0.559269, 0.805584, 1)
-LinkButton/colors/font_outline_color = Color(1.05888e-06, 0.467633, 0.677203, 1)
-LinkButton/font_sizes/font_size = 88
-LinkButton/fonts/font = ExtResource("3_71enm")
-TabContainer/colors/font_selected_color = Color(1, 1, 1, 1)
-TabContainer/colors/font_unselected_color = Color(0.54902, 0.705882, 0.705882, 1)
-TabContainer/constants/outline_size = 4
-TabContainer/font_sizes/font_size = 18
-TabContainer/fonts/font = ExtResource("6_238sx")
-TabContainer/styles/tab_focus = SubResource("StyleBoxEmpty_2ysve")
-TabContainer/styles/tab_hovered = ExtResource("6_6qyud")
-TabContainer/styles/tab_selected = ExtResource("6_6qyud")
-TabContainer/styles/tab_unselected = ExtResource("6_6qyud")
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5j8ir"]
 bg_color = Color(0.54902, 0.552941, 0.870588, 0.364706)
 
@@ -403,6 +359,7 @@ func _ready() -> void:
 "
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4ygak"]
+resource_local_to_scene = true
 shader = ExtResource("5_5x2ja")
 shader_parameter/fov = 90.0
 shader_parameter/cull_back = true
@@ -416,7 +373,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-theme = SubResource("Theme_6qyud")
+theme = ExtResource("1_8d2sb")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -529,14 +486,14 @@ text = "命理师"
 [node name="PopupPanel" type="PopupPanel" parent="TabContainer/副职"]
 auto_translate_mode = 1
 position = Vector2i(0, 95)
-size = Vector2i(400, 56)
+size = Vector2i(536, 56)
 theme_override_styles/panel = SubResource("StyleBoxFlat_uyp0c")
 
 [node name="GridContainer" type="HBoxContainer" parent="TabContainer/副职/PopupPanel"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 400.0
+offset_right = 536.0
 offset_bottom = 56.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -546,6 +503,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 1
+theme_override_colors/font_color = Color(0.772549, 0.960784, 0.443137, 1)
 text = "筑基"
 
 [node name="金丹" type="Button" parent="TabContainer/副职/PopupPanel/GridContainer"]
@@ -553,6 +511,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 1
+theme_override_colors/font_color = Color(0.443137, 0.780392, 0.960784, 1)
 text = "金丹"
 
 [node name="元婴" type="Button" parent="TabContainer/副职/PopupPanel/GridContainer"]
@@ -560,6 +519,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 1
+theme_override_colors/font_color = Color(0.745098, 0.498039, 0.960784, 1)
 text = "元婴"
 
 [node name="化神" type="Button" parent="TabContainer/副职/PopupPanel/GridContainer"]
@@ -567,6 +527,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 1
+theme_override_colors/font_color = Color(0.960784, 0.686275, 0.356863, 1)
 text = "化神"
 
 [node name="Label" type="Label" parent="."]
@@ -610,12 +571,14 @@ script = ExtResource("8_vthb0")
 [node name="Cal" type="Button" parent="Buttons"]
 layout_mode = 2
 size_flags_horizontal = 10
+tooltip_text = "[卡池/手牌]的卡牌总数"
 text = "400"
 script = ExtResource("3_5j8ir")
 
 [node name="Reset" type="Button" parent="Buttons"]
 layout_mode = 2
 size_flags_horizontal = 10
+tooltip_text = "重置计数器和副职"
 theme_override_fonts/font = ExtResource("6_238sx")
 text = "初始化"
 script = ExtResource("4_p1wol")
@@ -623,6 +586,7 @@ script = ExtResource("4_p1wol")
 [node name="language" type="Button" parent="Buttons"]
 layout_mode = 2
 size_flags_horizontal = 10
+tooltip_text = "中文/English"
 theme_override_fonts/font = ExtResource("6_238sx")
 toggle_mode = true
 text = "En"

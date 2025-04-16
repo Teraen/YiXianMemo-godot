@@ -13,6 +13,7 @@ config_version=5
 config/name="Yixian: The Cultivation Card Memo"
 run/main_scene="uid://cg7xpl03uf808"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 0)
 boot_splash/show_image=false
 config/icon="uid://bq6tfhskcvsks"
 
@@ -48,3 +49,6 @@ locale/fallback="zh_CN"
 
 textures/canvas_textures/default_texture_filter=2
 renderer/rendering_method="mobile"
+viewport/hdr_2d=true
+environment/defaults/default_clear_color=Color(0.301961, 0.301961, 0.301961, 0)
+viewport/transparent_background=true
