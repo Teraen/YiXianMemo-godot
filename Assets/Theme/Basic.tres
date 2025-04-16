@@ -1,0 +1,51 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://ccvygelflfa5a"]
+
+[ext_resource type="FontFile" uid="uid://cbmciypd6hgsi" path="res://Assets/font/字魂白鸽天行体.ttf" id="1_ygexi"]
+[ext_resource type="StyleBox" uid="uid://c3nrylgljld58" path="res://Assets/Theme/BUTTON_STYLE.tres" id="2_71xw2"]
+[ext_resource type="FontFile" uid="uid://dnoetiemewewd" path="res://Assets/font/ChironGoRoundTC-900H.ttf" id="3_grygo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6qyud"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ysve"]
+
+[resource]
+Button/colors/font_color = Color(0.509804, 0.705882, 0.705882, 1)
+Button/colors/font_focus_color = Color(0.509804, 0.705882, 0.705882, 1)
+Button/colors/font_hover_color = Color(0.705882, 0.705882, 0.705882, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/constants/outline_size = 7
+Button/font_sizes/font_size = 20
+Button/fonts/font = ExtResource("1_ygexi")
+Button/styles/focus = SubResource("StyleBoxEmpty_6qyud")
+Button/styles/hover = ExtResource("2_71xw2")
+Button/styles/hover_pressed = ExtResource("2_71xw2")
+Button/styles/normal = ExtResource("2_71xw2")
+Button/styles/pressed = ExtResource("2_71xw2")
+CheckButton/colors/font_color = Color(0.54902, 0.705882, 0.705882, 1)
+CheckButton/colors/font_focus_color = Color(0.54902, 0.705882, 0.705882, 1)
+CheckButton/colors/font_hover_color = Color(0.627451, 0.627451, 0.627451, 1)
+CheckButton/colors/font_hover_pressed_color = Color(0.627451, 0.627451, 0.627451, 1)
+CheckButton/colors/font_pressed_color = Color(1, 1, 1, 1)
+CheckButton/font_sizes/font_size = 20
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 1)
+Label/constants/shadow_outline_size = 4
+Label/font_sizes/font_size = 23
+Label/fonts/font = ExtResource("1_ygexi")
+LinkButton/colors/font_color = Color(0, 0.698039, 1, 1)
+LinkButton/colors/font_hover_color = Color(1.34766e-06, 0.559269, 0.805584, 1)
+LinkButton/colors/font_outline_color = Color(1.05888e-06, 0.467633, 0.677203, 1)
+LinkButton/font_sizes/font_size = 88
+LinkButton/fonts/font = ExtResource("3_grygo")
+TabContainer/colors/font_selected_color = Color(1, 1, 1, 1)
+TabContainer/colors/font_unselected_color = Color(0.54902, 0.705882, 0.705882, 1)
+TabContainer/constants/outline_size = 4
+TabContainer/font_sizes/font_size = 18
+TabContainer/fonts/font = ExtResource("1_ygexi")
+TabContainer/styles/tab_focus = SubResource("StyleBoxEmpty_2ysve")
+TabContainer/styles/tab_hovered = ExtResource("2_71xw2")
+TabContainer/styles/tab_selected = ExtResource("2_71xw2")
+TabContainer/styles/tab_unselected = ExtResource("2_71xw2")
+TooltipLabel/font_sizes/font_size = 16
+TooltipLabel/fonts/font = ExtResource("3_grygo")

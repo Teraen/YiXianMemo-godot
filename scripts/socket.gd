@@ -207,8 +207,8 @@ func _process(_delta):
 				var button = sp_map_2[split[1]]
 				button.Num = button.Num + int(dict[keys[i]])
 			else:
-				label.text = "Info: " + keys[i]
 				Global.err_log = Global.err_log + _format_log(keys[i])
+			label.text = "Info: " + keys[i]
 			i += 1
 		
 func start_listening():
