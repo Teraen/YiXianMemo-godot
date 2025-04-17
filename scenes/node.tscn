@@ -9118,7 +9118,7 @@ offset_right = 1534.0
 offset_bottom = 951.0
 theme_override_fonts/font = ExtResource("3_71enm")
 theme_override_font_sizes/font_size = 16
-text = "v2.1.5"
+text = "v2.1.6"
 
 [connection signal="tab_changed" from="TabContainer" to="TabContainer" method="_on_tab_changed"]
 [connection signal="toggled" from="TabContainer/门派/CS" to="GridContainer/VBoxContainer/Card1" method="_on_cs_toggled"]
