@@ -208,8 +208,13 @@ func _process(_delta):
 				button.Num = button.Num + int(dict[keys[i]])
 			else:
 				Global.err_log = Global.err_log + _format_log(keys[i])
-			label.text = "Info: " + keys[i]
+			if keys[i] == "(err,模型下载完成)":
+				label.text = "Info: " + tr("OCR模型下载完成")
+			else:
+				label.text = "Info: " + keys[i]
 			i += 1
+		if i == 0:
+			label.text = tr("Info: " + str(packet))
 		
 func start_listening():
 # warning-ignore:return_value_discarded
