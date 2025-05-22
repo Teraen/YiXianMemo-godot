@@ -9,8 +9,8 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ysve"]
 
 [resource]
-Button/colors/font_color = Color(0.509804, 0.705882, 0.705882, 1)
-Button/colors/font_focus_color = Color(0.509804, 0.705882, 0.705882, 1)
+Button/colors/font_color = Color(0, 0.736555, 0.888408, 1)
+Button/colors/font_focus_color = Color(0, 0.737255, 0.890196, 1)
 Button/colors/font_hover_color = Color(0.705882, 0.705882, 0.705882, 1)
 Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 Button/colors/font_pressed_color = Color(1, 1, 1, 1)
@@ -39,7 +39,7 @@ LinkButton/colors/font_outline_color = Color(1.05888e-06, 0.467633, 0.677203, 1)
 LinkButton/font_sizes/font_size = 88
 LinkButton/fonts/font = ExtResource("3_grygo")
 TabContainer/colors/font_selected_color = Color(1, 1, 1, 1)
-TabContainer/colors/font_unselected_color = Color(0.54902, 0.705882, 0.705882, 1)
+TabContainer/colors/font_unselected_color = Color(0, 0.737255, 0.890196, 1)
 TabContainer/constants/outline_size = 4
 TabContainer/font_sizes/font_size = 18
 TabContainer/fonts/font = ExtResource("1_ygexi")

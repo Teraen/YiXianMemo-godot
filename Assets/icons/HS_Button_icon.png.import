@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hp1yg0edmgie"
-path="res://.godot/imported/bilibili.png-e41da89734fc55a595c17e08225cc13b.ctex"
+uid="uid://bhd85tuf0wql6"
+path="res://.godot/imported/HS_Button_icon.png-91ceff747f6171aa9d72e634906a85be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PIC/bilibili.png"
-dest_files=["res://.godot/imported/bilibili.png-e41da89734fc55a595c17e08225cc13b.ctex"]
+source_file="res://Assets/icons/HS_Button_icon.png"
+dest_files=["res://.godot/imported/HS_Button_icon.png-91ceff747f6171aa9d72e634906a85be.ctex"]
 
 [params]
 

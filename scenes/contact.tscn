@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=3 uid="uid://vvacyrgypgat"]
+
+[ext_resource type="Script" uid="uid://bsf4c3vkkhqfb" path="res://scenes/q-d-b.gd" id="1_b6okr"]
+[ext_resource type="Texture2D" uid="uid://chpt3414balhe" path="res://Assets/icons/icons8-tencent-qq-48.png" id="2_b6okr"]
+[ext_resource type="Texture2D" uid="uid://rqiybridwv2r" path="res://Assets/icons/icons8-胆汁-100.png" id="4_b6okr"]
+[ext_resource type="Texture2D" uid="uid://do3wxdtwc7qva" path="res://Assets/icons/icon-discord-50.png" id="4_pjsik"]
+
+[node name="ColorRect" type="ColorRect"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+scale = Vector2(0.960005, 0.996153)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 1
+color = Color(0, 0, 0, 0)
+script = ExtResource("1_b6okr")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -25.0
+offset_right = 25.0
+offset_bottom = 158.0
+grow_horizontal = 2
+
+[node name="QQ" type="TextureRect" parent="VBoxContainer"]
+layout_mode = 2
+tooltip_text = "QQ_author"
+texture = ExtResource("2_b6okr")
+expand_mode = 4
+
+[node name="LinkButton" type="LinkButton" parent="VBoxContainer/QQ"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.416563
+offset_top = -0.28576
+offset_right = -0.416561
+offset_bottom = -0.285759
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+uri = "https://qm.qq.com/q/7NBvzuL7BC"
+
+[node name="DC" type="TextureRect" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("4_pjsik")
+
+[node name="bili" type="TextureRect" parent="VBoxContainer"]
+layout_mode = 2
+tooltip_text = "bilibili_author"
+texture = ExtResource("4_b6okr")
+expand_mode = 5
+
+[node name="LinkButton" type="LinkButton" parent="VBoxContainer/bili"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+uri = "https://space.bilibili.com/13671193"
+
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

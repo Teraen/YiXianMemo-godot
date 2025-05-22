@@ -1,4 +1,4 @@
-source,zh_CN,en
+key,zh_CN,en
 弹窗,弹窗,PopUp
 初始化,初始化,Reset
 云灵剑宗,云灵剑宗,Cloud Spirit Sword Sect
@@ -23,11 +23,11 @@ En,En,中文
 金丹,金丹,Virtuoso
 元婴,元婴,Immortality
 化神,化神,Incarnation
-Info: 正在校验Python依赖完整性...,Info: 正在校验Python依赖完整性...,Info: Checking Python dependencies...
-Info: Python依赖校验完毕,Info: Python依赖校验完毕,Info: Python dependencies check completed
-Info: 正在安装paddlepaddle...,Info: 正在安装paddlepaddle...,Info: Installing paddlepaddle...
-Info: 正在安装paddleocr...,Info: 正在安装paddleocr...,Info: Installing paddleocr...
-Info: 正在安装pynput...,Info: 正在安装pynput...,Info: Installing pynput...
-Info: 正在安装mss...,Info: 正在安装mss...,Info: Installing mss...
-Info: 正在安装pygetwindow...,Info: 正在安装pygetwindow...,Info: Installing pygetwindow...
-Info: OCR模型下载完成,Info: OCR模型下载完成,Info: OCR models download completed
+tool_tip_mobile_model,"点击切换检测模型（当前：低精度）\n暂不支持热切换（将重置已记录数据）\nTips：\n影响识别准确率和速度，具体表现取决于CPU性能\n此外选择尽量高的游戏分辨率也可以提高准确率","Click to switch detection model (currently: low precision)\nHot switching is not supported yet (recorded data will be reset)\nTips:\nAffects recognition accuracy and speed, the specific performance depends on CPU performance\nIn addition, choosing the highest possible game resolution can also improve accuracy"
+tool_tip_server_model,"点击切换检测模型（当前：高精度）\n暂不支持热切换（将重置已记录数据）\nTips：\n影响识别准确率和速度，具体表现取决于CPU性能\n此外选择尽量高的游戏分辨率也可以提高准确率","Click to switch detection model (currently: high precision)\nHot switching is not supported yet (recorded data will be reset)\nTips:\nAffects recognition accuracy and speed, the specific performance depends on CPU performance\nIn addition, choosing the highest possible game resolution can also improve accuracy"
+low_det_model,低精度,Low precision
+high_det_model,高精度,High precision
+new_version,查看最新版本信息,View the latest version information
+YiSim_link,"友情链接\nYiSim: 弈仙牌模拟器\nBy Kiven and Sharp","Friendly Links\nYiSim: YiXian Simulator\nBy Kiven and Sharp"
+QQ_author,联系作者,Author's QQ
+bilibili_author,bilibili主页,bilibili page

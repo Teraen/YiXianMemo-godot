@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhd85tuf0wql6"
-path="res://.godot/imported/HS_Button_icon.png-a57de57eb6312bdcb1eaddd5b8c97a8d.ctex"
+uid="uid://do3wxdtwc7qva"
+path="res://.godot/imported/icon-discord-50.png-6f5c2a21c164d3ae8d0643857f0e4812.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PIC/HS_Button_icon.png"
-dest_files=["res://.godot/imported/HS_Button_icon.png-a57de57eb6312bdcb1eaddd5b8c97a8d.ctex"]
+source_file="res://Assets/icons/icon-discord-50.png"
+dest_files=["res://.godot/imported/icon-discord-50.png-6f5c2a21c164d3ae8d0643857f0e4812.ctex"]
 
 [params]
 

@@ -5,7 +5,7 @@ func _ready():
 	for label in labels:
 		label.add_to_group("labels", true)
 		
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	text = str(sum_visible_labels())
 			
 func sum_visible_labels():

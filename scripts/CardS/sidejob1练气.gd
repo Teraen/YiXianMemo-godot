@@ -30,7 +30,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 #	检测并切换计数模式以及可见性
 	if detail_mode.button_pressed:
 		mode = true

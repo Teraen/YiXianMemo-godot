@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blbr4dkbsj104"
-path="res://.godot/imported/DX_Button_icon.png-2f190aa081edfe8d4d14193e5a822efe.ctex"
+uid="uid://chpt3414balhe"
+path="res://.godot/imported/icons8-tencent-qq-48.png-9381d8fa798062537f0bb299607ed461.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PIC/DX_Button_icon.png"
-dest_files=["res://.godot/imported/DX_Button_icon.png-2f190aa081edfe8d4d14193e5a822efe.ctex"]
+source_file="res://Assets/icons/icons8-tencent-qq-48.png"
+dest_files=["res://.godot/imported/icons8-tencent-qq-48.png-9381d8fa798062537f0bb299607ed461.ctex"]
 
 [params]
 

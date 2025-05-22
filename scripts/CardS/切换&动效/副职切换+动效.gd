@@ -52,9 +52,6 @@ func _ready() -> void:
 	plant.pressed.connect(_on_plant_pressed)
 	fortune.pressed.connect(_on_fortune_pressed)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 
 #鼠标进入悬停动效
 func _on_mouse_entered() -> void:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=355 format=3 uid="uid://cg7xpl03uf808"]
+[gd_scene load_steps=354 format=3 uid="uid://cg7xpl03uf808"]
 
 [ext_resource type="Theme" uid="uid://ccvygelflfa5a" path="res://Assets/Theme/Basic.tres" id="1_8d2sb"]
 [ext_resource type="Texture2D" uid="uid://30t8gcxbhl80" path="res://Assets/PIC/CS/CS1/150px-云剑•探云_1级.png" id="2_qhfa5"]
@@ -20,7 +20,6 @@
 [ext_resource type="Texture2D" uid="uid://blbr4dkbsj104" path="res://Assets/icons/DX_Button_icon.png" id="7_wm43i"]
 [ext_resource type="Script" uid="uid://dlwo0b3l85482" path="res://scripts/UI/language.gd" id="8_8d2sb"]
 [ext_resource type="Script" uid="uid://dk1ylubqvnq3w" path="res://scripts/UI/restart_py.gd" id="8_vthb0"]
-[ext_resource type="Script" uid="uid://j6yi486qpc04" path="res://scripts/det_model.gd" id="12_0ac1q"]
 [ext_resource type="Texture2D" uid="uid://b0eeemcltkuqe" path="res://Assets/PIC/DX/DX1/150px-崩拳•封_1级.png" id="12_awf80"]
 [ext_resource type="Texture2D" uid="uid://bruxg6lqhiy4l" path="res://Assets/PIC/FE/FE1/150px-木灵•芽_1级.png" id="13_d2qqo"]
 [ext_resource type="Texture2D" uid="uid://cg6b5isp8k28c" path="res://Assets/PIC/DX/DX1/150px-崩拳•弹_1级.png" id="13_wby4p"]
@@ -344,10 +343,10 @@
 [ext_resource type="Texture2D" uid="uid://dtsdpi6txkqeg" path="res://Assets/PIC/命/150px-厄劫缠身_1级.png" id="316_vthb0"]
 [ext_resource type="Texture2D" uid="uid://n468wkmsflxl" path="res://Assets/PIC/命/150px-命运轮回_1级.png" id="323_8d2sb"]
 [ext_resource type="Texture2D" uid="uid://d0a38oeskgj7v" path="res://Assets/PIC/命/150px-天机·顺应_1级.png" id="330_p7syq"]
+[ext_resource type="Texture2D" uid="uid://hp1yg0edmgie" path="res://Assets/icons/bilibili.png" id="337_poqfo"]
 [ext_resource type="Script" uid="uid://doqulc2socc2f" path="res://scripts/socket.gd" id="341_vthb0"]
-[ext_resource type="Texture2D" uid="uid://u3t01m5lcfby" path="res://Assets/icons/icons8-链接-96.png" id="344_pvbcu"]
-[ext_resource type="Texture2D" uid="uid://c2h3qpolna4yk" path="res://Assets/icons/icons8-电子邮件-64(1).png" id="345_pvbcu"]
-[ext_resource type="Texture2D" uid="uid://ckon18aabi46u" path="res://Assets/icons/icons-newversion-48.png" id="348_0ac1q"]
+[ext_resource type="Texture2D" uid="uid://c1635h1h20qrr" path="res://Assets/icons/icon-link-64.png" id="346_0ac1q"]
+[ext_resource type="Texture2D" uid="uid://tx1ilbstjaye" path="res://Assets/icons/icon-message-64.png" id="347_wm43i"]
 [ext_resource type="Script" uid="uid://blldv2sanq2yt" path="res://scripts/UI/contact.gd" id="348_pvbcu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5j8ir"]
@@ -599,10 +598,6 @@ size_flags_horizontal = 10
 tooltip_text = "[卡池/手牌]的卡牌总数"
 text = "400"
 script = ExtResource("3_5j8ir")
-
-[node name="det_model" type="Button" parent="Buttons"]
-layout_mode = 2
-script = ExtResource("12_0ac1q")
 
 [node name="Reset" type="Button" parent="Buttons"]
 layout_mode = 2
@@ -9088,6 +9083,46 @@ offset_bottom = 24.1538
 grow_horizontal = 0
 text = "2"
 
+[node name="Version" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1482.0
+offset_top = 923.0
+offset_right = 1534.0
+offset_bottom = 951.0
+theme_override_fonts/font = ExtResource("3_71enm")
+theme_override_font_sizes/font_size = 16
+text = "v2.2.0"
+
+[node name="bilibiliLogo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 204.0
+offset_top = 8.0
+offset_right = 804.0
+offset_bottom = 208.0
+grow_horizontal = 2
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("337_poqfo")
+
+[node name="LinkButton" type="LinkButton" parent="bilibiliLogo"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -64.9999
+offset_top = -60.0
+offset_right = 555.0
+offset_bottom = 69.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "@TeraEnemy"
+underline = 2
+uri = "https://space.bilibili.com/13671193"
+
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 11
@@ -9117,7 +9152,7 @@ grow_vertical = 0
 
 [node name="友链" type="TextureRect" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("344_pvbcu")
+texture = ExtResource("346_0ac1q")
 expand_mode = 4
 
 [node name="LinkButton" type="LinkButton" parent="ColorRect/VBoxContainer/友链"]
@@ -9127,54 +9162,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-tooltip_text = "YiSim_link"
+tooltip_text = "YiSim弈仙牌模拟器
+By Kiven and Sharp"
 uri = "https://yisim.pages.dev/"
 
 [node name="contact" type="TextureRect" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("345_pvbcu")
+texture = ExtResource("347_wm43i")
 expand_mode = 4
 script = ExtResource("348_pvbcu")
-
-[node name="VersionCheck" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -49.0
-offset_top = -79.0
-offset_right = -9.0
-offset_bottom = -39.0
-grow_horizontal = 0
-grow_vertical = 0
-texture = ExtResource("348_0ac1q")
-expand_mode = 4
-
-[node name="LinkButton" type="LinkButton" parent="VersionCheck"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "new_version"
-uri = "https://memoversion.teraenemy.sbs/Version.txt"
-
-[node name="Version" type="Label" parent="."]
-layout_mode = 0
-offset_left = 1482.0
-offset_top = 921.0
-offset_right = 1534.0
-offset_bottom = 949.0
-theme_override_constants/shadow_offset_x = -1
-theme_override_constants/shadow_offset_y = 2
-theme_override_constants/outline_size = 8
-theme_override_constants/shadow_outline_size = 5
-theme_override_fonts/font = ExtResource("3_71enm")
-theme_override_font_sizes/font_size = 16
-text = "v2.2.0"
 
 [connection signal="tab_changed" from="TabContainer" to="TabContainer" method="_on_tab_changed"]
 [connection signal="toggled" from="TabContainer/门派/CS" to="GridContainer/VBoxContainer/Card1" method="_on_cs_toggled"]
@@ -9182,7 +9178,6 @@ text = "v2.2.0"
 [connection signal="toggled" from="TabContainer/门派/FE" to="GridContainer/VBoxContainer/Card1" method="_on_fe_toggled"]
 [connection signal="toggled" from="TabContainer/门派/DX" to="GridContainer/VBoxContainer/Card1" method="_on_dx_toggled"]
 [connection signal="pressed" from="Buttons/RestartPy" to="Buttons/RestartPy" method="_on_pressed"]
-[connection signal="pressed" from="Buttons/det_model" to="Buttons/det_model" method="_on_pressed"]
 [connection signal="pressed" from="Buttons/Reset" to="Buttons/Reset" method="_on_pressed"]
 [connection signal="toggled" from="Buttons/language" to="Buttons/language" method="_on_toggled"]
 [connection signal="gui_input" from="GridContainer/VBoxContainer/Card1" to="GridContainer/VBoxContainer/Card1" method="_on_gui_input"]
